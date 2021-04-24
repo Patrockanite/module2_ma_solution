@@ -1,5 +1,5 @@
 /********** Style pour module2_ma_solution **************/
-
+/********** Version du 24/04/2021 a 10h15 **************/
 
 /********** Base styles **********/
 body{
@@ -10,8 +10,7 @@ body{
 }
  /*********** pour avoir la vraie largeur du conteneur *************/
     /*********** to have the true width of the container **************/
-* {
-   
+* {   
     box-sizing:border-box;
   }
      /************ (100*125%*140% = 175%) ***************/
@@ -22,18 +21,21 @@ body{
     padding: 10px;
   }
   /* Il faut une position absolue afin que h2 suive la section n'importe où */
+  /* You need an absolute position to h2 follows the section anywhere */
+
   h2{
     position:absolute;
+    right: 15px;
+    top: -4px;
     font-size: 120%;
     text-align: center;
-    right: 15px;
-    top: -5px;
-    padding : 10px;
     width: 130px;
     border: 2px solid black;
+    padding : 10px;
   }
   
-  /* Il ne faut pas laisser la position static par défaut sinon la postion absolue de h2ne fonctionnera pas */ 
+  /* Il ne faut pas laisser la position static par défaut sinon la postion absolue de h2 ne fonctionnera pas */ 
+  /* You must not leave the static position by default otherwise the absolute position of h2 will not work */
   
   section {
     position: relative;
@@ -107,6 +109,7 @@ body{
       width: 100%;
     }
     /********* Pour pousser les sections plus bas en grand ecran ****************/
+    /********* To push the sections down in a large screen ***************** /
     h1{
       padding-bottom: 30px;
     }
@@ -114,6 +117,7 @@ body{
 
    /*********** tablettes entre 768px et 991px inclus ***********************/
   /**********  tablet view (between 768px and 991px, inclusively) **********/
+
 @media (min-width: 768px) and (max-width: 991px) {
     .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
       float: left;
@@ -156,6 +160,7 @@ body{
       width: 100%;
     }
     /********* Pour pousser les sections un peu moins bas en ecran moyen ****************/
+    /********* To push the sections a little down in medium screen *****************/
     h1{
       padding-bottom: 15px;
     }
